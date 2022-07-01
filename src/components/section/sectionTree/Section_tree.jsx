@@ -84,7 +84,7 @@ const Section = styled.section`
 	@media screen and (max-width: 722px) {
 		grid-template-columns: repeat(1, 6fr);
 		padding: 30px 30px;
-		gap: 100px;
+		gap: 50px;
 	}
 `;
 
