@@ -5,6 +5,7 @@ import Section_one from '../section/sectionOne/Section_one';
 import styled from 'styled-components';
 import Section_Two from '../section/sectionTwo/Section_two';
 import Section_tree from '../section/sectionTree/Section_tree';
+import Section_four from '../section/sectionFour/Section_four';
 
 const Main = () => {
 	return (
@@ -13,6 +14,7 @@ const Main = () => {
 			<Section_one />
 			<Section_Two />
 			<Section_tree />
+			<Section_four />
 		</MainContent>
 	);
 };
