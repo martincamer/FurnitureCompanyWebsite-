@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdFavoriteBorder } from 'react-icons/md';
-import { FaShoppingCart } from 'react-icons/fa';
 const Section_four = () => {
-	const [cart, setCart] = useState([]);
 	const [carrito] = useState([
 		{
 			id: 1,
@@ -29,10 +27,6 @@ const Section_four = () => {
 			comprar: 'Buy Now',
 		},
 	]);
-
-	const addToCart = (product) => {
-		setCart([...cart, product]);
-	};
 
 	return (
 		<Section>
@@ -104,6 +98,9 @@ const ContentOne = styled.div`
 	height: 100%;
 	height: 100%;
 	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 `;
 const ContentTitle = styled.div`
 	width: 100%;
@@ -113,6 +110,14 @@ const ContentTitle = styled.div`
 const Title = styled.h4`
 	font-size: 2.2rem;
 	color: #242424;
+
+	@media screen and (max-width: 722px) {
+		font-size: 1.6rem;
+	}
+
+	@media screen and (max-width: 440px) {
+		font-size: 1.312rem;
+	}
 `;
 
 const ContentParagraph = styled.div`
@@ -124,6 +129,12 @@ const Paragraph = styled.p`
 	color: #383738;
 	font-size: 1.25rem;
 	line-height: 1.688rem;
+	@media screen and (max-width: 722px) {
+		font-size: 1.2rem;
+	}
+	@media screen and (max-width: 440px) {
+		font-size: 1rem;
+	}
 `;
 
 const ContentTwo = styled.div`

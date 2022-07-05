@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Section_Two from '../section/sectionTwo/Section_two';
 import Section_tree from '../section/sectionTree/Section_tree';
 import Section_four from '../section/sectionFour/Section_four';
+import Seciton_five from '../section/sectionFive/Seciton_five';
 
 const Main = () => {
 	return (
@@ -15,6 +16,7 @@ const Main = () => {
 			<Section_Two />
 			<Section_tree />
 			<Section_four />
+			<Seciton_five />
 		</MainContent>
 	);
 };
